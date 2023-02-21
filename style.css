@@ -139,6 +139,7 @@
     position: relative;
     position: fixed;
     width: 100%;
+    z-index: 99;
 }
 
 .header .branding img{
@@ -339,6 +340,7 @@ aboutme{
     margin-right: 10rem;
     color: #ffa700;
     font-weight: 600;
+    font-size: 3rem;
 }
 
 .about .about__text p{
@@ -388,3 +390,46 @@ aboutme{
    }
 }
 
+/*----------------hm-services---------------*/
+.hm-services{
+    background: #2b2b2b;
+    padding: 8rem 0;
+}
+.hm-services .hm-services__item i{
+    font-size: 5rem;
+    color: #ffa700;
+    margin-bottom: 2rem;
+    
+}
+.hm-services .hm-services__item h4{
+    font-size: 2.5rem;
+    color: #ffa700;
+    font-weight: 600;
+}
+.hm-services .hm-services__item p{
+    color: #FFFFFF;
+    margin: 2rem 0;
+    text-align: justify;
+}
+
+.hm-services .hm-services__wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    /* grid-gap: 10rem; */
+   
+}
+.hm-services .hm-services__item {
+    text-align: center;
+    margin: 0 4rem;
+}
+
+@media screen and (max-width:500px){
+    .hm-services .hm-services__wrapper{
+        grid-template-columns: 1fr;
+        row-gap: 13rem;
+       
+    }
+
+
+
+}
